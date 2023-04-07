@@ -1,0 +1,7 @@
+{
+  "name": "IdentityVault",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
