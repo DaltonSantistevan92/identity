@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>Bloqueado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="showFallback" class="fallback">
+    <ion-icon name="lock-closed-outline" size="large"></ion-icon>
+    <ion-input [(ngModel)]="password" type="password" placeholder="Contraseña"></ion-input>
+    <ion-button (click)="unlock()" expand="full" fill="clear" shape="round"> desbloquear con código</ion-button>
+    <ion-button (click)="openBiometricAuth()" expand="full" fill="clear" shape="round">
+      <ion-icon slot="icon-only" name="finger-print"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
